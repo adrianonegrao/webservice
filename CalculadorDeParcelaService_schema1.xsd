@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.raiadrogasil.com.br/" xmlns:tns="http://ws.raiadrogasil.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="calcularParcelaSOAP" type="tns:calcularParcelaSOAP"/>
+
+  <xs:element name="calcularParcelaSOAPResponse" type="tns:calcularParcelaSOAPResponse"/>
+
+  <xs:complexType name="calcularParcelaSOAP">
+    <xs:sequence>
+      <xs:element name="valorTotal" type="xs:double"/>
+      <xs:element name="quantidade" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calcularParcelaSOAPResponse">
+    <xs:sequence>
+      <xs:element name="valorParcela" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
